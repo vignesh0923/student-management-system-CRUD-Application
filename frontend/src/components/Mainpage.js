@@ -6,8 +6,6 @@ import axios from "axios";
 import "../css/Mainpage.css";
 import "../css/popup.css"
 
-
-
 const Mainpage = ( onCancel ) => {
   const navigate = useNavigate();
 
@@ -65,19 +63,9 @@ const Mainpage = ( onCancel ) => {
     // Close the popup
     setShowDeletePopup(false);
   };
-
-
-
-
-   
-
-  
-
   return (
-   <div> 
-  
-    
-          <h3>Student Management System</h3>
+   <div>    
+     <h3>Student Management System</h3>
       <div className="container">
         <div className="searchbar">
           <input
