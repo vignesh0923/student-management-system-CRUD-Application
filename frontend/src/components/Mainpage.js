@@ -19,13 +19,7 @@ const Mainpage = ( onCancel ) => {
   useEffect(() => {
     loadData();
   }, []);
-
-  // const deletestudent = (id) => {
-  //   console.log(id);
-  //     axios.delete(`http://localhost:3030/remove/${id}`);
-  //   }
-  // };
-
+  
   const [searchTerm, setSearchTerm] = useState("");
 
   const handlesearch = () => {
@@ -43,12 +37,8 @@ const Mainpage = ( onCancel ) => {
     setSearchTerm(e.target.value);
     handlesearch()
   }
-
-
   const [showDeletePopup, setShowDeletePopup] = useState(false);
-
-
- 
+  
   const handleDelete = (id) => {
     console.log(id);
     // Send DELETE request to the server
@@ -56,9 +46,7 @@ const Mainpage = ( onCancel ) => {
     window.location.reload();
     setShowDeletePopup(false)
   };
-
-
-
+  
   const handleCancel = () => {
     // Close the popup
     setShowDeletePopup(false);
